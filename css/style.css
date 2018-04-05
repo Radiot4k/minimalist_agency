@@ -1,0 +1,93 @@
+body {
+	min-width: 1170px;
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito Sans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #898f9f;
+	background-color: #ffffff;
+}
+
+.main-header {
+	max-width: 1375px;
+	min-height: 900px;
+	padding-top: 65px;
+	background-image: url(../img/blood.png);
+	background-repeat: no-repeat;
+	background-position-x: -110px;
+}
+
+.container {
+	margin: 0;
+	margin-left: auto;
+    padding-left: 205px;
+    padding-right: 170px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.logo {
+    transform: translateX(-8px);
+}
+
+.logo svg {
+    width: 138px;
+    height: 30px; 
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-nav svg {
+    margin-top: 7px;
+}
+
+.slogan {
+	display: flex;
+    flex-direction: column;
+    margin-left: 206px;
+	font-size: 40px;
+	font-weight: 300;
+	color: #dbdbdb;
+}
+
+.slogan .upper {
+	margin-bottom: 53px;
+	font-weight: 900;
+	font-size: 100px;
+	line-height: 79.23px;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	color: #d22425;
+	transform: translateX(-5px);
+}
+
+.slogan .big {
+	font-size: 70px;
+	letter-spacing: -1px;
+}
+
+.slogan .upper::after {
+    content: "";
+    left: 255px;
+    display: inline-block;
+    margin-left: 18px;
+    width: 10px;
+    height: 90px;
+    background-color: #333333;
+    transform: translateY(8px);
+}
+
+.slogan .black {
+	color: #000000;
+}
