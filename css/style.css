@@ -11,19 +11,15 @@ body {
 }
 
 .main-header {
-	max-width: 1375px;
-	min-height: 900px;
+	display: flex;
+    flex-direction: column;
+	min-height: 890px;
 	padding-top: 65px;
-	background-image: url(../img/blood.png);
-	background-repeat: no-repeat;
-	background-position-x: -110px;
 }
 
 .container {
-	margin: 0;
-	margin-left: auto;
-    padding-left: 205px;
-    padding-right: 170px;
+	width: 1170px;
+    margin: 0 auto;
 }
 
 .header-top {
@@ -34,7 +30,20 @@ body {
 }
 
 .logo {
+	position: relative;
     transform: translateX(-8px);
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    left: -205px;
+    width: 364px;
+    height: 805px;
+    background-image: url(../img/blood.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logo svg {
@@ -46,6 +55,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-left: 100%;
 }
 
 .main-nav svg {
@@ -55,7 +65,8 @@ body {
 .slogan {
 	display: flex;
     flex-direction: column;
-    margin-left: 206px;
+    margin-left: 205px;
+    margin-bottom: auto;
 	font-size: 40px;
 	font-weight: 300;
 	color: #dbdbdb;
@@ -90,4 +101,15 @@ body {
 
 .slogan .black {
 	color: #000000;
+}
+
+.arrow {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #eeeeee;
+    border-radius: 50%;
 }
