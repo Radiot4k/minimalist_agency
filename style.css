@@ -1,0 +1,52 @@
+svg {
+  width: 350px;
+}
+
+path {
+  stroke-width: 5px;
+  stroke: black;
+  stroke-dasharray: 1 2000;
+  stroke-dashoffset: 500;
+  fill: transparent;
+  animation: dash 7s linear, fill 3s ease-out 7s;
+  animation-fill-mode: forwards;
+}
+
+span {
+  position: absolute;
+  top: 230px;
+  left: 380px;
+
+  font-weight: bold;
+  color: transparent;
+
+  animation: color 0.3s ease-out 9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dasharray: 1 1999;
+  }
+  to {
+    stroke-dasharray: 2000 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
+}
+
+@keyframes color {
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
+}
